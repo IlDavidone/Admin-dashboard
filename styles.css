@@ -19,7 +19,7 @@ body {
 .upper-header {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .left-upper-header {
@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: start;
     gap: 18px;
-    padding: 0px 0px 25px 20px;
+    padding: 0px 0px 15px 20px;
 }
 
 .search-button {
@@ -49,7 +49,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding-right: 50px;
-    padding-bottom: 21px;
+    padding-bottom: 15px;
 }
 
 .profile-image-small {
@@ -63,22 +63,66 @@ body {
     width: 30px;
 }
 
-.profile-name {
+.profile-name-up {
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.under-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.right-under-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.left-under-header {
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    gap: 15px;
+}
+
+.text-wrapping {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-greeting {
+    font-weight: 500;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text-wrapping p {
+    margin: 0;
+}
+
+.profile-picture-big {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
 
 .content {
     display: grid;
     height: 100vh;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
     grid-template-columns: 1fr 6.5fr;
 }
 
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
-    background-color: brown;
+    background-color: #1992D4;
 }
 
 .sidebar .utilities-section .sidebar-buttons p {
@@ -97,6 +141,9 @@ body {
 .main {
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
+    background-color: rgb(221, 233, 235);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .sidebar-buttons-logo {
